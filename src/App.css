@@ -1,3 +1,11 @@
 body{
   margin: 0;
 }
+
+.menuIcon {
+ display: flex;
+ padding: 10px;
+}
+.menuIcon:hover{
+  cursor: pointer;
+}

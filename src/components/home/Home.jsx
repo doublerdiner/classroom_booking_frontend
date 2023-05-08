@@ -13,10 +13,10 @@ const Home = ()=>{
         {isAuthenticated ? 
         <>
             <Grid2 container>
-                <Grid2 xs={1}>
+                <Grid2 xs={12}>
                     <Menu/>
                 </Grid2>
-                <Grid2 xs={11}>
+                <Grid2 xs={12}>
                     <Typography variant="h1">Home</Typography>
                     <Routes>
                         <Route></Route>
