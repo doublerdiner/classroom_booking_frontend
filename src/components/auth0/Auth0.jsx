@@ -1,3 +1,4 @@
+import { Button, Typography } from "@mui/material"
 import LoginButton from "./LoginButton"
 import LogoutButton from "./LogoutButton"
 import { useAuth0 } from "@auth0/auth0-react"
@@ -9,15 +10,15 @@ const Auth0 = ()=>{
 
     return(
         <>
-        <h1>Classroom System</h1>
+        <Typography variant="h1">Classroom System</Typography>
         {!isAuthenticated?
-        <i>Please Login to continue</i>
+        <Typography>Please Login to continue</Typography>
         : <></>}
         <LoginButton/>
         <LogoutButton/>
         {isAuthenticated?
         <>
-        <button><Link to="/home">Enter</Link></button>
+        <Button variant="outlined"><Link to="/home">Enter</Link></Button>
         </>:<></>}
         </>
     )
