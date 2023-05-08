@@ -1,9 +1,13 @@
 import { Typography } from "@mui/material"
+import LogoutButton from "../auth0/LogoutButton"
 
 const Menu = ()=>{
     return(
         <>
-            <Typography sx={{height:'100vh', border:'1px', borderStyle:'solid'}}>Home Menu</Typography>
+            <section>
+                <Typography sx={{height:'100vh', border:'1px', borderStyle:'solid'}}>Home Menu</Typography>
+                <LogoutButton/>
+            </section>
         </>
     )
 }
