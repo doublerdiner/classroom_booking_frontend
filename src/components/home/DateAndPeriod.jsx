@@ -1,7 +1,7 @@
-import { Button, Typography } from "@mui/material"
+import { Button, FormControl, InputLabel, MenuItem, Select, Typography } from "@mui/material"
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import { textAlign } from "@mui/system";
+import { Box, minHeight, minWidth } from "@mui/system";
 
 const DateAndPeriod = ({date, currentPeriod, setCurrentPeriod, updateDate})=>{
     
@@ -20,10 +20,13 @@ const DateAndPeriod = ({date, currentPeriod, setCurrentPeriod, updateDate})=>{
         updateDate(new Date)
     }
 
+    const handleChange = (e)=>{
+        setCurrentPeriod(e.target.value)
+    }
+
 
     return(
         <>
-        <Typography>Date & Period</Typography>
         <section className="center">
             <Button>
                 <ArrowBackIcon onClick={backOneDay}/>
@@ -40,15 +43,24 @@ const DateAndPeriod = ({date, currentPeriod, setCurrentPeriod, updateDate})=>{
         <div className="center">
             <Typography>{currentDate}</Typography>
         </div>
-        {/* <i class="bi bi-arrow-left-circle" onClick={()=>{backOneDay()}}></i>
-        <h2>{currentDate}</h2>
-        <DropdownButton id="dropdown-basic-button" title="Select Period">
-        <Dropdown.Item href="#/action-1" onClick={()=>{setCurrentPeriod(1)}}>1</Dropdown.Item>
-        <Dropdown.Item href="#/action-2" onClick={()=>{setCurrentPeriod(2)}}>2</Dropdown.Item>
-        <Dropdown.Item href="#/action-3" onClick={()=>{setCurrentPeriod(3)}}>3</Dropdown.Item>
-        </DropdownButton>
-        <p>Period: {currentPeriod}</p>
-        <i class="bi bi-arrow-right-circle" onClick={()=>{forwardOneDay()}}></i> */}
+        <div className="center verticalCenter">
+            <Typography>Period:</Typography>
+            <Box>
+                <FormControl size="small">
+                    <Select
+                        labelId="periodSelect-label"
+                        id="periodSelect"
+                        value={currentPeriod}
+                        inputProps={{ 'aria-label': 'Without label' }}
+                        onChange={handleChange}
+                    >
+                        <MenuItem value={1}>1</MenuItem>
+                        <MenuItem value={2}>2</MenuItem>
+                        <MenuItem value={3}>3</MenuItem>
+                    </Select>
+                </FormControl>
+            </Box>
+        </div>
         </>
 
     )

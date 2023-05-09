@@ -31,6 +31,9 @@ const Menu = ({user})=>{
                                     <Typography sx={{paddingLeft:".5rem"}}>All Pupils</Typography>
                                 </MenuItem>
                             </div>
+                            <div>
+                                <Typography variant="h2">School Register</Typography>
+                            </div>
                             <div className="spaceRight">
                                 <div>
                                     <Typography sx={{paddingTop:"15px"}}>{user.firstName} {user.lastName}</Typography>

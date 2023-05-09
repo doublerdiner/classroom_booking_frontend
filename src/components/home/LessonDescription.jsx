@@ -1,9 +1,13 @@
-import { Typography } from "@mui/material"
+import { Card, CardContent, Typography } from "@mui/material"
 
-const LessonDescription = ()=>{
+const LessonDescription = ({currentLesson})=>{
     return(
         <>
-        <Typography>Lesson Description</Typography>
+        <Card>
+            <CardContent>
+                <Typography className="center" variant="h5" sx={{textDecoration:"underline"}}>Lesson Description</Typography>
+            </CardContent>
+        </Card>
         </>
     )
 }

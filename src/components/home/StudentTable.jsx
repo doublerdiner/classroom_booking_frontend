@@ -1,9 +1,20 @@
-import { Typography } from "@mui/material"
+import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material"
 
-const StudentTable = ()=>{
+const StudentTable = ({lesson})=>{
     return(
         <>
-        <Typography>Student Table</Typography>
+        <TableContainer component={Paper}>
+            <Table>
+                <TableHead>
+                    <TableRow>
+                        <TableCell>Student Name</TableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+
+                </TableBody>
+            </Table>
+        </TableContainer>
         </>
     )
 }

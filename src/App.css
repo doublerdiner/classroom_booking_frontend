@@ -33,6 +33,7 @@ body{
 .menuIcon {
  display: flex;
  padding: 10px;
+ 
 }
 .menuIcon:hover{
   cursor: pointer;
@@ -41,6 +42,9 @@ body{
 .center{
   display: flex;
   justify-content: center;
+}
+.verticalCenter{
+  align-items: center;
 }
 .spaceRight{
   position: absolute;
