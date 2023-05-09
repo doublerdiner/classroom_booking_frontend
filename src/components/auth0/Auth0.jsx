@@ -1,4 +1,4 @@
-import { Button, Typography } from "@mui/material"
+import { Box, Button, Paper, Typography } from "@mui/material"
 import LoginButton from "./LoginButton"
 import LogoutButton from "./LogoutButton"
 import { useAuth0 } from "@auth0/auth0-react"
@@ -10,16 +10,32 @@ const Auth0 = ()=>{
 
     return(
         <>
-        <Typography variant="h1">Classroom System</Typography>
-        {!isAuthenticated?
-        <Typography>Please Login to continue</Typography>
-        : <></>}
-        <LoginButton/>
-        <LogoutButton/>
-        {isAuthenticated?
-        <>
-        <Button variant="outlined"><Link to="/home">Enter</Link></Button>
-        </>:<></>}
+        <div className="bg animate"></div>
+        <div className="bg animate bg2"></div>
+        <div className="bg animate bg3"></div>
+        <div className="login">
+        <Paper sx={{
+            width: 500,
+            height: 250,
+            backgroundColor: 'primary.dark',
+            padding: "3vh"
+            }}>
+            <Typography variant="h2" align="center">School Register</Typography>
+            {!isAuthenticated?
+            <Typography align="center">Please Login to continue</Typography>
+            : <></>}
+            <div className="center topPadding3vh">
+                <LoginButton/>
+                <LogoutButton/>
+            </div>
+            {isAuthenticated?
+            <>
+            <div className="center topPadding3vh">
+                <Button variant="contained" ><Link to="/home" className="buttonLink">Enter</Link></Button>
+            </div>
+            </>:<></>}
+        </Paper>
+        </div>
         </>
     )
 }

@@ -1,4 +1,4 @@
-import { AppBar, Button, Toolbar, Typography } from "@mui/material"
+import { AppBar, Button, MenuItem, Toolbar, Typography } from "@mui/material"
 import LogoutButton from "../auth0/LogoutButton"
 import HomeIcon from '@mui/icons-material/Home';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -13,20 +13,28 @@ const Menu = ()=>{
                  <AppBar position="static">
                     <Toolbar variant="dense">
                         <div className="menuIcon">
-                                <HomeIcon></HomeIcon>
-                                <Typography>Home</Typography>
+                                <MenuItem>
+                                    <HomeIcon></HomeIcon>
+                                    <Typography sx={{paddingLeft:".5rem"}}>Home</Typography>
+                                </MenuItem>
                         </div>
                         <div className="menuIcon">
-                            <SchoolIcon></SchoolIcon>
-                            <Typography>Your Lessons</Typography>
+                            <MenuItem>
+                                <SchoolIcon></SchoolIcon>
+                                <Typography sx={{paddingLeft:".5rem"}}>Your Lessons</Typography>
+                            </MenuItem>
                         </div>
                         <div className="menuIcon">
-                            <GroupIcon></GroupIcon>
-                            <Typography>All Pupils</Typography>
+                            <MenuItem>
+                                <GroupIcon></GroupIcon>
+                                <Typography sx={{paddingLeft:".5rem"}}>All Pupils</Typography>
+                            </MenuItem>
                         </div>
                         <div className="menuIcon">
-                            <SettingsIcon></SettingsIcon>
-                            <Typography>Settings</Typography>
+                            <MenuItem>
+                                <SettingsIcon></SettingsIcon>
+                                <Typography sx={{paddingLeft:".5rem"}}>Settings</Typography>
+                            </MenuItem>
                         </div>
                         <div className="menuIcon">
                             <LogoutButton/>
