@@ -42,6 +42,12 @@ body{
   display: flex;
   justify-content: center;
 }
+.spaceRight{
+  position: absolute;
+  right: 100px;
+  display: flex;
+  
+}
 .buttonLink{
   color: white;
   text-decoration: none;
