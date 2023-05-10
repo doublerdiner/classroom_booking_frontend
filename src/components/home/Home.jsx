@@ -7,23 +7,46 @@ import Homepage from "./Homepage"
 import { useEffect, useState } from "react"
 import { getIndex } from "../service/Service"
 import { findThisUser} from "../service/Helpers"
+import { getDate } from "../service/Helpers"
 
 const Home = ()=>{
     const {isAuthenticated, user} = useAuth0()
-    const [currentUser, setCurrentUser] = useState({})
+    const [currentUser, setCurrentUser] = useState(null)
+    const [date, setDate] = useState(getDate(new Date))
+    const [currentPeriod, setCurrentPeriod] = useState(1)
+    const [currentLesson, setCurrentLesson] = useState([])
+    const [currentStudents, setCurrentStudents] = useState([])
 
     useEffect(()=>{
-        const getUser = ()=>{
             getIndex('users').then(data =>{
-             const newUser = findThisUser(data, user)
-             setCurrentUser(newUser)
-            }) 
-         }
-        getUser()
-        
+                return findThisUser(data, user)
+        })
+        .then((res)=>{
+            setCurrentUser(res)
+        })
     },[user])
 
+    useEffect(()=>{
+        if(currentUser && date && currentPeriod) {
+            const getLesson = currentUser.lessons.filter(lesson=>{
+                return lesson.period === currentPeriod && lesson.dayType === date.dayName
+            })
+            setCurrentLesson(getLesson[0])
+        }
+    },[currentUser, date, currentPeriod])
 
+    useEffect(()=>{
+        if(currentLesson !== undefined){
+            setCurrentStudents(currentLesson.students)
+        }
+    },[currentLesson])
+
+    const updateDate = (date)=>{
+        const newDate = getDate(date)
+        setDate(newDate)
+    }
+
+    console.log(currentStudents)
 
     return(
         
@@ -40,7 +63,16 @@ const Home = ()=>{
                 <Grid2 xs={11}>
                     <Paper sx={{marginTop:"3vh"}}>
                     <Routes>
-                        <Route path="/" element={<Homepage user={currentUser}/>}></Route>
+                        <Route path="/" element={
+                            <Homepage 
+                            user={currentUser}
+                            date={date}
+                            currentPeriod={currentPeriod}
+                            currentLesson={currentLesson}
+                            currentStudents={currentStudents}
+                            setCurrentPeriod={setCurrentPeriod}
+                            updateDate={updateDate}
+                            />}></Route>
                     </Routes>
                     </Paper>
                 </Grid2>

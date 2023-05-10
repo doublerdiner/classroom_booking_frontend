@@ -1,6 +1,18 @@
-import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material"
+import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material"
+import StudentRow from "./StudentRow"
 
-const StudentTable = ({lesson})=>{
+const StudentTable = ({currentStudents, setStudentDemeritAbsence})=>{
+    
+        const studentList = 
+            currentStudents.map(student=>{
+                return(
+                    <StudentRow key={student.id} 
+                    student={student} 
+                    setStudentDemeritAbsence={setStudentDemeritAbsence}/>
+                )
+            })
+
+
     return(
         <>
         <TableContainer component={Paper}>
@@ -8,10 +20,16 @@ const StudentTable = ({lesson})=>{
                 <TableHead>
                     <TableRow>
                         <TableCell>Student Name</TableCell>
+                        <TableCell>Student Year</TableCell>
+                        <TableCell>Demerit Warning</TableCell>
+                        <TableCell>Add Demerit</TableCell>
+                        <TableCell>Absence Warning</TableCell>
+                        <TableCell>Add Absence</TableCell>
+                        <TableCell>View Student</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
-
+                    {studentList}
                 </TableBody>
             </Table>
         </TableContainer>
