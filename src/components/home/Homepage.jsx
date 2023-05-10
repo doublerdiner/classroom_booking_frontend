@@ -27,7 +27,7 @@ const Homepage = ({user, date, currentPeriod, currentLesson, currentStudents, se
             </Grid2>
             <Grid2 xs={3}>
                 {studentDemeritAbsence !== null ? 
-                <StudentDemeritAbsence studentDemeritAbsence={studentDemeritAbsence}/>
+                <StudentDemeritAbsence studentDemeritAbsence={studentDemeritAbsence} setStudentDemeritAbsence={setStudentDemeritAbsence} date={date}/>
                 :<></>}
             </Grid2>
             <Grid2 xs={9}>

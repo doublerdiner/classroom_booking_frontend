@@ -2,8 +2,6 @@ import { Card, CardContent, Typography } from "@mui/material"
 
 const LessonDescription = ({currentLesson})=>{
 
-    console.log(currentLesson)
-
     return(
         <>
         <Card>

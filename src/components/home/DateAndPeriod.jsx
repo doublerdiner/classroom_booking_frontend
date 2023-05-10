@@ -1,7 +1,7 @@
-import { Button, FormControl, InputLabel, MenuItem, Select, Typography } from "@mui/material"
+import { Button, FormControl, MenuItem, Select, Typography } from "@mui/material"
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import { Box, minHeight, minWidth } from "@mui/system";
+import { Box } from "@mui/system";
 
 const DateAndPeriod = ({date, currentPeriod, setCurrentPeriod, updateDate})=>{
     

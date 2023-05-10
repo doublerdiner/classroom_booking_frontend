@@ -46,8 +46,6 @@ const Home = ()=>{
         setDate(newDate)
     }
 
-    console.log(currentStudents)
-
     return(
         
         <>
