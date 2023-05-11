@@ -32,12 +32,16 @@ const Home = ()=>{
                 return lesson.period === currentPeriod && lesson.dayType === date.dayName
             })
             setCurrentLesson(getLesson[0])
+            console.log(getLesson)
         }
     },[currentUser, date, currentPeriod])
 
     useEffect(()=>{
         if(currentLesson !== undefined){
             setCurrentStudents(currentLesson.students)
+        }
+        else{
+            setCurrentStudents([])
         }
     },[currentLesson])
 

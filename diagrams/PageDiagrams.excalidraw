@@ -203,8 +203,8 @@
     },
     {
       "type": "text",
-      "version": 47,
-      "versionNonce": 218312905,
+      "version": 49,
+      "versionNonce": 1276961018,
       "isDeleted": false,
       "id": "VG1gEUL5eBJkJEfl8aALP",
       "fillStyle": "solid",
@@ -223,7 +223,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777746,
+      "updated": 1683819217151,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -234,12 +234,12 @@
       "containerId": null,
       "originalText": "Home",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 57,
-      "versionNonce": 479976519,
+      "version": 59,
+      "versionNonce": 962151334,
       "isDeleted": false,
       "id": "NGgCC-vjMPst74DVEhq0A",
       "fillStyle": "solid",
@@ -258,7 +258,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777746,
+      "updated": 1683819217152,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -269,12 +269,12 @@
       "containerId": null,
       "originalText": "Your Lessons",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 142,
-      "versionNonce": 1892954025,
+      "version": 144,
+      "versionNonce": 378188218,
       "isDeleted": false,
       "id": "54ZGu4K9UcwUW7338lBQx",
       "fillStyle": "solid",
@@ -293,7 +293,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777746,
+      "updated": 1683819217152,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -304,12 +304,12 @@
       "containerId": null,
       "originalText": "All Pupils",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 96,
-      "versionNonce": 1502002023,
+      "version": 98,
+      "versionNonce": 1912463078,
       "isDeleted": false,
       "id": "xmLezx4V_ftcYCHpMmoVg",
       "fillStyle": "solid",
@@ -328,7 +328,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777746,
+      "updated": 1683819217152,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -339,12 +339,12 @@
       "containerId": null,
       "originalText": "Settings",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 29,
-      "versionNonce": 1944212105,
+      "version": 31,
+      "versionNonce": 478177914,
       "isDeleted": false,
       "id": "EFPkxidGyuGdOhtvYyZiQ",
       "fillStyle": "solid",
@@ -363,7 +363,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777747,
+      "updated": 1683819217152,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -374,12 +374,12 @@
       "containerId": null,
       "originalText": "Sign Out",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 128,
-      "versionNonce": 1879619207,
+      "version": 130,
+      "versionNonce": 971837990,
       "isDeleted": false,
       "id": "fLlub7GfXSEIWnIMjhF2G",
       "fillStyle": "solid",
@@ -398,7 +398,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777747,
+      "updated": 1683819217152,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -409,12 +409,12 @@
       "containerId": null,
       "originalText": "09/05/2023",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 85,
-      "versionNonce": 2062096745,
+      "version": 87,
+      "versionNonce": 1958808378,
       "isDeleted": false,
       "id": "pg8D1ggWsFwFQJm34cgJl",
       "fillStyle": "solid",
@@ -433,7 +433,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777747,
+      "updated": 1683819217152,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -444,12 +444,12 @@
       "containerId": null,
       "originalText": "Hi User",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 30,
-      "versionNonce": 1457409447,
+      "version": 32,
+      "versionNonce": 2081676646,
       "isDeleted": false,
       "id": "1GAlJ9ceSoWB3QJ8lJu5-",
       "fillStyle": "solid",
@@ -468,7 +468,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777747,
+      "updated": 1683819217153,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -479,12 +479,12 @@
       "containerId": null,
       "originalText": "Day",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 50,
-      "versionNonce": 1194591305,
+      "version": 52,
+      "versionNonce": 1706005498,
       "isDeleted": false,
       "id": "DzzKZanm-2WhU3yGahiIp",
       "fillStyle": "solid",
@@ -503,7 +503,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777747,
+      "updated": 1683819217153,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -514,7 +514,7 @@
       "containerId": null,
       "originalText": "Period",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "rectangle",
@@ -574,8 +574,8 @@
     },
     {
       "type": "text",
-      "version": 170,
-      "versionNonce": 2033451207,
+      "version": 172,
+      "versionNonce": 1035944102,
       "isDeleted": false,
       "id": "tec1quPx4n8Rw8o1uYjQ5",
       "fillStyle": "solid",
@@ -594,7 +594,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777747,
+      "updated": 1683819217153,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -605,12 +605,12 @@
       "containerId": null,
       "originalText": "Lesson Discription",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 47,
-      "versionNonce": 1688113961,
+      "version": 49,
+      "versionNonce": 1901003962,
       "isDeleted": false,
       "id": "IhfBAybxzrf44qYTK9U9X",
       "fillStyle": "solid",
@@ -629,7 +629,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777747,
+      "updated": 1683819217153,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -640,7 +640,7 @@
       "containerId": null,
       "originalText": "Students",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "rectangle",
@@ -842,8 +842,8 @@
     },
     {
       "type": "text",
-      "version": 151,
-      "versionNonce": 681988071,
+      "version": 153,
+      "versionNonce": 1385970662,
       "isDeleted": false,
       "id": "iRqPZIF_twpjsqblNyTEE",
       "fillStyle": "solid",
@@ -862,7 +862,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777747,
+      "updated": 1683819217153,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -873,12 +873,12 @@
       "containerId": null,
       "originalText": "Home",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 161,
-      "versionNonce": 1469335049,
+      "version": 163,
+      "versionNonce": 1631739258,
       "isDeleted": false,
       "id": "KxuzA4tByTHTaw2ox0Ytj",
       "fillStyle": "solid",
@@ -897,7 +897,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777748,
+      "updated": 1683819217153,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -908,12 +908,12 @@
       "containerId": null,
       "originalText": "Your Lessons",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 246,
-      "versionNonce": 1329707783,
+      "version": 248,
+      "versionNonce": 280481574,
       "isDeleted": false,
       "id": "gm6rsjY74IvrkmhC1VCGX",
       "fillStyle": "solid",
@@ -932,7 +932,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777748,
+      "updated": 1683819217153,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -943,12 +943,12 @@
       "containerId": null,
       "originalText": "All Pupils",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 200,
-      "versionNonce": 185638121,
+      "version": 202,
+      "versionNonce": 1389141562,
       "isDeleted": false,
       "id": "hK5KDR0SjVuDVFwhNuLFG",
       "fillStyle": "solid",
@@ -967,7 +967,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777748,
+      "updated": 1683819217153,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -978,12 +978,12 @@
       "containerId": null,
       "originalText": "Settings",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 133,
-      "versionNonce": 1635959335,
+      "version": 135,
+      "versionNonce": 75430502,
       "isDeleted": false,
       "id": "98u2ErcsZWDcMANGFf6q-",
       "fillStyle": "solid",
@@ -1002,7 +1002,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777748,
+      "updated": 1683819217154,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1013,12 +1013,12 @@
       "containerId": null,
       "originalText": "Sign Out",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 247,
-      "versionNonce": 2124355529,
+      "version": 249,
+      "versionNonce": 1120978682,
       "isDeleted": false,
       "id": "jK4jEQuly8h7izhkkqNoK",
       "fillStyle": "solid",
@@ -1037,7 +1037,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777748,
+      "updated": 1683819217154,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1048,12 +1048,12 @@
       "containerId": null,
       "originalText": "09/05/2023",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 204,
-      "versionNonce": 274064711,
+      "version": 206,
+      "versionNonce": 616480166,
       "isDeleted": false,
       "id": "-KGy2UfLOMAGQxhMEUA-e",
       "fillStyle": "solid",
@@ -1072,7 +1072,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777748,
+      "updated": 1683819217154,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1083,7 +1083,7 @@
       "containerId": null,
       "originalText": "Hi User",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "rectangle",
@@ -1143,8 +1143,8 @@
     },
     {
       "type": "text",
-      "version": 12,
-      "versionNonce": 878393001,
+      "version": 14,
+      "versionNonce": 433182650,
       "isDeleted": false,
       "id": "sfsvJAbLHgY-CEzJrJBJT",
       "fillStyle": "solid",
@@ -1163,7 +1163,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777748,
+      "updated": 1683819217154,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1174,12 +1174,12 @@
       "containerId": null,
       "originalText": "Add Lesson",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 29,
-      "versionNonce": 991405159,
+      "version": 31,
+      "versionNonce": 111417574,
       "isDeleted": false,
       "id": "EBVWK_tWnocAXiLe4m_xE",
       "fillStyle": "solid",
@@ -1198,7 +1198,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777748,
+      "updated": 1683819217154,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1209,7 +1209,7 @@
       "containerId": null,
       "originalText": "Edit Lesson / Delete Lesson",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "rectangle",
@@ -1411,8 +1411,8 @@
     },
     {
       "type": "text",
-      "version": 206,
-      "versionNonce": 1592818057,
+      "version": 208,
+      "versionNonce": 938659962,
       "isDeleted": false,
       "id": "i_cPgr8iK_C8srQm8tpf9",
       "fillStyle": "solid",
@@ -1431,7 +1431,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777748,
+      "updated": 1683819217154,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1442,12 +1442,12 @@
       "containerId": null,
       "originalText": "Home",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 216,
-      "versionNonce": 563380103,
+      "version": 218,
+      "versionNonce": 297536550,
       "isDeleted": false,
       "id": "XNiqMsu0sWvvIPhwzpr_b",
       "fillStyle": "solid",
@@ -1466,7 +1466,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777748,
+      "updated": 1683819217154,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1477,12 +1477,12 @@
       "containerId": null,
       "originalText": "Your Lessons",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 301,
-      "versionNonce": 1335517289,
+      "version": 303,
+      "versionNonce": 16167226,
       "isDeleted": false,
       "id": "MdWDkKyYm3I4L3pcG7DV4",
       "fillStyle": "solid",
@@ -1501,7 +1501,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777748,
+      "updated": 1683819217154,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1512,12 +1512,12 @@
       "containerId": null,
       "originalText": "All Pupils",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 255,
-      "versionNonce": 1443428007,
+      "version": 257,
+      "versionNonce": 871602022,
       "isDeleted": false,
       "id": "jU2BeQ4qryvaiQ5wk2e8o",
       "fillStyle": "solid",
@@ -1536,7 +1536,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777748,
+      "updated": 1683819217154,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1547,12 +1547,12 @@
       "containerId": null,
       "originalText": "Settings",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 188,
-      "versionNonce": 606366537,
+      "version": 190,
+      "versionNonce": 1749055994,
       "isDeleted": false,
       "id": "oCeToW3FHWXxlG1lzdlf0",
       "fillStyle": "solid",
@@ -1571,7 +1571,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777748,
+      "updated": 1683819217154,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1582,12 +1582,12 @@
       "containerId": null,
       "originalText": "Sign Out",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 290,
-      "versionNonce": 1864468935,
+      "version": 292,
+      "versionNonce": 362265254,
       "isDeleted": false,
       "id": "TctNHjgh1Ng8cQxcmOCit",
       "fillStyle": "solid",
@@ -1606,7 +1606,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777749,
+      "updated": 1683819217154,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1617,12 +1617,12 @@
       "containerId": null,
       "originalText": "09/05/2023",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 247,
-      "versionNonce": 887757353,
+      "version": 249,
+      "versionNonce": 2094213818,
       "isDeleted": false,
       "id": "sQPddgh551_NB0MBjZHjm",
       "fillStyle": "solid",
@@ -1641,7 +1641,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777749,
+      "updated": 1683819217154,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1652,7 +1652,7 @@
       "containerId": null,
       "originalText": "Hi User",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "rectangle",
@@ -1712,8 +1712,8 @@
     },
     {
       "type": "text",
-      "version": 8,
-      "versionNonce": 2046474471,
+      "version": 10,
+      "versionNonce": 1297446374,
       "isDeleted": false,
       "id": "3p5UjJnuaxNujkC9DGbAa",
       "fillStyle": "solid",
@@ -1732,7 +1732,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777749,
+      "updated": 1683819217155,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1743,7 +1743,7 @@
       "containerId": null,
       "originalText": "Search",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "rectangle",
@@ -1775,8 +1775,8 @@
     },
     {
       "type": "text",
-      "version": 14,
-      "versionNonce": 1121381641,
+      "version": 16,
+      "versionNonce": 1968292730,
       "isDeleted": false,
       "id": "1n4ci3axkyvdW3zVQBgpW",
       "fillStyle": "solid",
@@ -1795,7 +1795,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777749,
+      "updated": 1683819217155,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1806,7 +1806,7 @@
       "containerId": null,
       "originalText": "All Students",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "rectangle",
@@ -2008,8 +2008,8 @@
     },
     {
       "type": "text",
-      "version": 262,
-      "versionNonce": 740361223,
+      "version": 264,
+      "versionNonce": 339331366,
       "isDeleted": false,
       "id": "kEN_S-hm3hI7TRZeTCewP",
       "fillStyle": "solid",
@@ -2028,7 +2028,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777749,
+      "updated": 1683819217155,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2039,12 +2039,12 @@
       "containerId": null,
       "originalText": "Home",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 272,
-      "versionNonce": 1701209065,
+      "version": 274,
+      "versionNonce": 1006584890,
       "isDeleted": false,
       "id": "F01wZaAbaEv8e1iV7BuZC",
       "fillStyle": "solid",
@@ -2063,7 +2063,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777749,
+      "updated": 1683819217155,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2074,12 +2074,12 @@
       "containerId": null,
       "originalText": "Your Lessons",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 357,
-      "versionNonce": 1435560743,
+      "version": 359,
+      "versionNonce": 2041689190,
       "isDeleted": false,
       "id": "e7sJSOmB8td7lRvzjtON8",
       "fillStyle": "solid",
@@ -2098,7 +2098,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777749,
+      "updated": 1683819217155,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2109,12 +2109,12 @@
       "containerId": null,
       "originalText": "All Pupils",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 311,
-      "versionNonce": 950271689,
+      "version": 313,
+      "versionNonce": 2059316474,
       "isDeleted": false,
       "id": "FQs7fU92aTcPG4BEmLp2U",
       "fillStyle": "solid",
@@ -2133,7 +2133,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777749,
+      "updated": 1683819217155,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2144,12 +2144,12 @@
       "containerId": null,
       "originalText": "Settings",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 244,
-      "versionNonce": 313978439,
+      "version": 246,
+      "versionNonce": 394934182,
       "isDeleted": false,
       "id": "r6NOofHzgaFu5HP1Jwk_L",
       "fillStyle": "solid",
@@ -2168,7 +2168,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777749,
+      "updated": 1683819217155,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2179,12 +2179,12 @@
       "containerId": null,
       "originalText": "Sign Out",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 376,
-      "versionNonce": 1261125033,
+      "version": 378,
+      "versionNonce": 655556026,
       "isDeleted": false,
       "id": "l7fUKddeuwcua8_sLk5cj",
       "fillStyle": "solid",
@@ -2203,7 +2203,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777750,
+      "updated": 1683819217155,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2214,12 +2214,12 @@
       "containerId": null,
       "originalText": "09/05/2023",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 333,
-      "versionNonce": 1047498087,
+      "version": 335,
+      "versionNonce": 1173377766,
       "isDeleted": false,
       "id": "hEmmSQGjcOY2D3oDVIiv2",
       "fillStyle": "solid",
@@ -2238,7 +2238,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777750,
+      "updated": 1683819217155,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2249,7 +2249,7 @@
       "containerId": null,
       "originalText": "Hi User",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "rectangle",
@@ -2309,8 +2309,8 @@
     },
     {
       "type": "text",
-      "version": 79,
-      "versionNonce": 1277665417,
+      "version": 81,
+      "versionNonce": 236926586,
       "isDeleted": false,
       "id": "cJ76NZwfbYKJz9hkXYYm0",
       "fillStyle": "solid",
@@ -2329,7 +2329,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777750,
+      "updated": 1683819217155,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2340,7 +2340,7 @@
       "containerId": null,
       "originalText": "Student Details",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "rectangle",
@@ -2372,8 +2372,8 @@
     },
     {
       "type": "text",
-      "version": 122,
-      "versionNonce": 604457095,
+      "version": 124,
+      "versionNonce": 1332807206,
       "isDeleted": false,
       "id": "WPyKfGBrhD0fHrH90vPba",
       "fillStyle": "solid",
@@ -2392,7 +2392,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777750,
+      "updated": 1683819217156,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2403,7 +2403,7 @@
       "containerId": null,
       "originalText": "Graph",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "rectangle",
@@ -2605,8 +2605,8 @@
     },
     {
       "type": "text",
-      "version": 247,
-      "versionNonce": 2035591017,
+      "version": 249,
+      "versionNonce": 1621514042,
       "isDeleted": false,
       "id": "JNirFyNd5wPdlvQkuULwO",
       "fillStyle": "solid",
@@ -2625,7 +2625,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777750,
+      "updated": 1683819217156,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2636,12 +2636,12 @@
       "containerId": null,
       "originalText": "Home",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 257,
-      "versionNonce": 1899667367,
+      "version": 259,
+      "versionNonce": 620319078,
       "isDeleted": false,
       "id": "iHLDmg5Srse8ELugNwdbO",
       "fillStyle": "solid",
@@ -2660,7 +2660,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777750,
+      "updated": 1683819217156,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2671,12 +2671,12 @@
       "containerId": null,
       "originalText": "Your Lessons",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 342,
-      "versionNonce": 1291702857,
+      "version": 344,
+      "versionNonce": 1057710074,
       "isDeleted": false,
       "id": "C9UIgRx0ToQI33H8RfTzm",
       "fillStyle": "solid",
@@ -2695,7 +2695,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777750,
+      "updated": 1683819217156,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2706,12 +2706,12 @@
       "containerId": null,
       "originalText": "All Pupils",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 296,
-      "versionNonce": 1748374215,
+      "version": 298,
+      "versionNonce": 299250854,
       "isDeleted": false,
       "id": "39kRrKgSfhKXvR-hi20Yw",
       "fillStyle": "solid",
@@ -2730,7 +2730,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777750,
+      "updated": 1683819217156,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2741,12 +2741,12 @@
       "containerId": null,
       "originalText": "Settings",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 229,
-      "versionNonce": 1811849513,
+      "version": 231,
+      "versionNonce": 1162956986,
       "isDeleted": false,
       "id": "TVPY5bi2_WAZpipETglcD",
       "fillStyle": "solid",
@@ -2765,7 +2765,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777750,
+      "updated": 1683819217156,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2776,12 +2776,12 @@
       "containerId": null,
       "originalText": "Sign Out",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 353,
-      "versionNonce": 1368793575,
+      "version": 355,
+      "versionNonce": 1874112486,
       "isDeleted": false,
       "id": "jDQaTDPudBzUiBxIjpr7-",
       "fillStyle": "solid",
@@ -2800,7 +2800,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777750,
+      "updated": 1683819217156,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2811,12 +2811,12 @@
       "containerId": null,
       "originalText": "09/05/2023",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 310,
-      "versionNonce": 1405260809,
+      "version": 312,
+      "versionNonce": 387656058,
       "isDeleted": false,
       "id": "hsXuA-GAOuEjYMHw2kVKb",
       "fillStyle": "solid",
@@ -2835,7 +2835,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777750,
+      "updated": 1683819217156,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2846,7 +2846,7 @@
       "containerId": null,
       "originalText": "Hi User",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "rectangle",
@@ -2878,8 +2878,8 @@
     },
     {
       "type": "text",
-      "version": 39,
-      "versionNonce": 778521863,
+      "version": 41,
+      "versionNonce": 1520550694,
       "isDeleted": false,
       "id": "N7HOxZ8YrE73d-6FvU6dv",
       "fillStyle": "solid",
@@ -2898,7 +2898,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777751,
+      "updated": 1683819217156,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -2909,7 +2909,7 @@
       "containerId": null,
       "originalText": "User Name\n\nUser Surname\n\nUser Email",
       "lineHeight": 1.2,
-      "baseline": 114
+      "baseline": 115
     },
     {
       "type": "rectangle",
@@ -2969,8 +2969,8 @@
     },
     {
       "type": "text",
-      "version": 17,
-      "versionNonce": 1212492521,
+      "version": 19,
+      "versionNonce": 1806428730,
       "isDeleted": false,
       "id": "qTZOhgGB_3LPP6IR8-tst",
       "fillStyle": "solid",
@@ -2989,7 +2989,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777751,
+      "updated": 1683819217156,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -3000,12 +3000,12 @@
       "containerId": null,
       "originalText": "Absence Dates",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 74,
-      "versionNonce": 707138599,
+      "version": 76,
+      "versionNonce": 1695182438,
       "isDeleted": false,
       "id": "CDwKZzemAgFMTLkqSVCB6",
       "fillStyle": "solid",
@@ -3024,7 +3024,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777751,
+      "updated": 1683819217157,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -3035,12 +3035,12 @@
       "containerId": null,
       "originalText": "Demerit Dates",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 123,
-      "versionNonce": 34727369,
+      "version": 125,
+      "versionNonce": 434541306,
       "isDeleted": false,
       "id": "wESbFStp7BYN55_YiMROe",
       "fillStyle": "solid",
@@ -3059,7 +3059,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777751,
+      "updated": 1683819217157,
       "link": null,
       "locked": false,
       "fontSize": 47.940852687154724,
@@ -3070,12 +3070,12 @@
       "containerId": null,
       "originalText": "Home ",
       "lineHeight": 1.2,
-      "baseline": 47
+      "baseline": 46
     },
     {
       "type": "text",
-      "version": 72,
-      "versionNonce": 1287583559,
+      "version": 74,
+      "versionNonce": 1270591910,
       "isDeleted": false,
       "id": "jFVMVD7lliF5hO4OKDfh6",
       "fillStyle": "solid",
@@ -3094,7 +3094,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777751,
+      "updated": 1683819217157,
       "link": null,
       "locked": false,
       "fontSize": 41.15971515768005,
@@ -3105,12 +3105,12 @@
       "containerId": null,
       "originalText": "Your Lessons",
       "lineHeight": 1.2,
-      "baseline": 39
+      "baseline": 40
     },
     {
       "type": "text",
-      "version": 61,
-      "versionNonce": 474236073,
+      "version": 63,
+      "versionNonce": 609100730,
       "isDeleted": false,
       "id": "tSsj1xPA-X2mlMVHyP_BY",
       "fillStyle": "solid",
@@ -3129,7 +3129,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777751,
+      "updated": 1683819217157,
       "link": null,
       "locked": false,
       "fontSize": 41.80088708036619,
@@ -3144,8 +3144,8 @@
     },
     {
       "type": "text",
-      "version": 122,
-      "versionNonce": 1821275751,
+      "version": 124,
+      "versionNonce": 702713062,
       "isDeleted": false,
       "id": "MNSC1zLPkKy55PAtdTKZg",
       "fillStyle": "solid",
@@ -3164,7 +3164,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777751,
+      "updated": 1683819217157,
       "link": null,
       "locked": false,
       "fontSize": 41.80088708036619,
@@ -3179,8 +3179,8 @@
     },
     {
       "type": "text",
-      "version": 118,
-      "versionNonce": 1116194697,
+      "version": 120,
+      "versionNonce": 1157995642,
       "isDeleted": false,
       "id": "VEF1bgGS0vWWGIS1b9m3w",
       "fillStyle": "solid",
@@ -3199,7 +3199,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710777751,
+      "updated": 1683819217157,
       "link": null,
       "locked": false,
       "fontSize": 41.80088708036619,

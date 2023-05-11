@@ -3,7 +3,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Box } from "@mui/system";
 
-const DateAndPeriod = ({date, currentPeriod, setCurrentPeriod, updateDate})=>{
+const DateAndPeriod = ({date, currentPeriod, setCurrentPeriod, updateDate, setStudentDemeritAbsence})=>{
     
     const currentDate = `${date.dayName} ${date.day}/${date.month}/${date.year}`;
     const day = new Date(`${date.year}/${date.month}/${date.day}`); 
@@ -11,10 +11,13 @@ const DateAndPeriod = ({date, currentPeriod, setCurrentPeriod, updateDate})=>{
     const backOneDay = ()=>{
         const previousDay = day.setDate(day.getDate() -1)
         updateDate(new Date(previousDay))
+        setStudentDemeritAbsence(null)
+        
     }
     const forwardOneDay = ()=>{
         const nextDay = day.setDate(day.getDate() +1)
         updateDate(new Date(nextDay))
+        setStudentDemeritAbsence(null)
     }
     const today = ()=>{
         updateDate(new Date)
@@ -22,6 +25,7 @@ const DateAndPeriod = ({date, currentPeriod, setCurrentPeriod, updateDate})=>{
 
     const handleChange = (e)=>{
         setCurrentPeriod(e.target.value)
+        setStudentDemeritAbsence(null)
     }
 
 

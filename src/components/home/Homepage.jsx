@@ -23,7 +23,8 @@ const Homepage = ({user, date, currentPeriod, currentLesson, currentStudents, se
                 date={date} 
                 currentPeriod={currentPeriod} 
                 setCurrentPeriod={setCurrentPeriod} 
-                updateDate={updateDate}/>
+                updateDate={updateDate}
+                setStudentDemeritAbsence={setStudentDemeritAbsence}/>
             </Grid2>
             <Grid2 xs={3}>
                 {studentDemeritAbsence !== null ? 
