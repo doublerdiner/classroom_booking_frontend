@@ -10,6 +10,8 @@ import { findThisUser} from "../service/Helpers"
 import { getDate } from "../service/Helpers"
 import { postRoute } from "../service/Service"
 import Pupils from "../pupils/Pupils"
+import Lessons from "../lessons/Lessons"
+import Settings from "../settings/Settings"
 
 const Home = ()=>{
     const {isAuthenticated, user} = useAuth0()
@@ -19,13 +21,18 @@ const Home = ()=>{
     const [currentLesson, setCurrentLesson] = useState([])
     const [currentStudents, setCurrentStudents] = useState([])
     const [selectedStudent, setSelectedStudent] = useState(null)
+    const [allStudents, setAllStudents] = useState([])
 
     useEffect(()=>{
-            getIndex('users').then(data =>{
-                return findThisUser(data, user)
+        getIndex('users').then(data=>{
+            return findThisUser(data, user)
         })
         .then((res)=>{
             setCurrentUser(res)
+        })
+
+        getIndex('students').then(data =>{
+            setAllStudents(data)
         })
     },[user, selectedStudent])
 
@@ -61,7 +68,6 @@ const Home = ()=>{
     }
 
     const addAbsence = (data)=>{
-        console.log(data)
         const tempStudent = data.student
         postRoute("absences", data).then(absence=>{
             tempStudent.absences.push(absence)
@@ -102,6 +108,10 @@ const Home = ()=>{
                         <Route path="/pupils">
                             <Route index element={<Pupils/>}></Route>
                         </Route>
+                        <Route path="/lessons">
+                            <Route index element={<Lessons/>}></Route>
+                        </Route>
+                        <Route path="/settings" element={<Settings/>}/>
                     </Routes>
                     </Paper>
                 </Grid2>

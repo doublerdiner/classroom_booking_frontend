@@ -14,22 +14,28 @@ const Menu = ({user})=>{
                  <AppBar position="static">
                     <Toolbar variant="dense">
                             <div className="menuIcon">
+                                    <Link to="">
                                     <MenuItem>
-                                        <HomeIcon><Link to="/"></Link></HomeIcon>
+                                        <HomeIcon></HomeIcon>
                                         <Typography sx={{paddingLeft:".5rem"}}>Home</Typography>
                                     </MenuItem>
+                                    </Link>
                             </div>
                             <div className="menuIcon">
+                                <Link to="lessons">
                                 <MenuItem>
                                     <SchoolIcon></SchoolIcon>
                                     <Typography sx={{paddingLeft:".5rem"}}>Your Lessons</Typography>
                                 </MenuItem>
+                                </Link>
                             </div>
                             <div className="menuIcon">
+                                <Link to="pupils">
                                 <MenuItem>
                                     <GroupIcon></GroupIcon>
-                                    <Typography sx={{paddingLeft:".5rem"}}><Link to="/pupils">All Pupils</Link></Typography>
+                                    <Typography sx={{paddingLeft:".5rem"}}>All Pupils</Typography>
                                 </MenuItem>
+                                </Link>
                             </div>
                             <div>
                                 <Typography variant="h2">School Register</Typography>
@@ -39,10 +45,12 @@ const Menu = ({user})=>{
                                     <Typography sx={{paddingTop:"15px"}}>{user.firstName} {user.lastName}</Typography>
                                 </div>
                                 <div className="menuIcon">
+                                    <Link to="settings">
                                     <MenuItem>
                                         <SettingsIcon></SettingsIcon>
                                         <Typography sx={{paddingLeft:".5rem"}}>Settings</Typography>
                                     </MenuItem>
+                                    </Link>
                                 </div>
                                 <div className="menuIcon">
                                     <LogoutButton/>
