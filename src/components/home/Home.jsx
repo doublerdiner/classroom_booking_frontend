@@ -9,6 +9,7 @@ import { getIndex } from "../service/Service"
 import { findThisUser} from "../service/Helpers"
 import { getDate } from "../service/Helpers"
 import { postRoute } from "../service/Service"
+import Pupils from "../pupils/Pupils"
 
 const Home = ()=>{
     const {isAuthenticated, user} = useAuth0()
@@ -96,7 +97,11 @@ const Home = ()=>{
                             setSelectedStudent={setSelectedStudent}
                             addDemerit={addDemerit}
                             addAbsence={addAbsence}
-                            />}></Route>
+                            />}>
+                        </Route>
+                        <Route path="/pupils">
+                            <Route index element={<Pupils/>}></Route>
+                        </Route>
                     </Routes>
                     </Paper>
                 </Grid2>

@@ -28,7 +28,7 @@ const Menu = ({user})=>{
                             <div className="menuIcon">
                                 <MenuItem>
                                     <GroupIcon></GroupIcon>
-                                    <Typography sx={{paddingLeft:".5rem"}}>All Pupils</Typography>
+                                    <Typography sx={{paddingLeft:".5rem"}}><Link to="/pupils">All Pupils</Link></Typography>
                                 </MenuItem>
                             </div>
                             <div>
