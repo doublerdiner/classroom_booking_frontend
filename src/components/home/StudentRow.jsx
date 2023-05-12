@@ -2,18 +2,20 @@ import { Button, TableCell, TableRow } from "@mui/material"
 import AddIcon from '@mui/icons-material/Add';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 
-const StudentRow = ({student, setStudentDemeritAbsence})=>{
+const StudentRow = ({student, setStudentDemeritAbsence, setSelectedStudent={setSelectedStudent}})=>{
 
     const absenceClick = ()=>{
         setStudentDemeritAbsence({
             type: "Absence",
             student: student})
+        setSelectedStudent(student)
     }
 
     const demeritClick = ()=>{
         setStudentDemeritAbsence({
             type: "Demerit",
             student: student})
+        setSelectedStudent(student)
     }
 
     return(

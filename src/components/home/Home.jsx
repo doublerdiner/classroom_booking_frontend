@@ -8,6 +8,7 @@ import { useEffect, useState } from "react"
 import { getIndex } from "../service/Service"
 import { findThisUser} from "../service/Helpers"
 import { getDate } from "../service/Helpers"
+import { postRoute } from "../service/Service"
 
 const Home = ()=>{
     const {isAuthenticated, user} = useAuth0()
@@ -16,6 +17,7 @@ const Home = ()=>{
     const [currentPeriod, setCurrentPeriod] = useState(1)
     const [currentLesson, setCurrentLesson] = useState([])
     const [currentStudents, setCurrentStudents] = useState([])
+    const [selectedStudent, setSelectedStudent] = useState(null)
 
     useEffect(()=>{
             getIndex('users').then(data =>{
@@ -24,7 +26,7 @@ const Home = ()=>{
         .then((res)=>{
             setCurrentUser(res)
         })
-    },[user])
+    },[user, selectedStudent])
 
     useEffect(()=>{
         if(currentUser && date && currentPeriod) {
@@ -32,7 +34,6 @@ const Home = ()=>{
                 return lesson.period === currentPeriod && lesson.dayType === date.dayName
             })
             setCurrentLesson(getLesson[0])
-            console.log(getLesson)
         }
     },[currentUser, date, currentPeriod])
 
@@ -49,6 +50,24 @@ const Home = ()=>{
         const newDate = getDate(date)
         setDate(newDate)
     }
+
+    const addDemerit = (data)=>{
+        const tempStudent = data.student
+        postRoute("demerits", data).then(demerit=>{
+            tempStudent.demerits.push(demerit)
+            setSelectedStudent(tempStudent)
+        })
+    }
+
+    const addAbsence = (data)=>{
+        const tempStudent = data.student
+        postRoute("absences", data).then(absence=>{
+            tempStudent.absences.push(absence)
+            setSelectedStudent(tempStudent)
+        })
+    }
+
+    console.log(currentUser)
 
     return(
         
@@ -74,6 +93,10 @@ const Home = ()=>{
                             currentStudents={currentStudents}
                             setCurrentPeriod={setCurrentPeriod}
                             updateDate={updateDate}
+                            selectedStudent={selectedStudent}
+                            setSelectedStudent={setSelectedStudent}
+                            addDemerit={addDemerit}
+                            addAbsence={addAbsence}
                             />}></Route>
                     </Routes>
                     </Paper>

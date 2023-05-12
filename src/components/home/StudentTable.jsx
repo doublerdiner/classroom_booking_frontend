@@ -1,14 +1,15 @@
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material"
 import StudentRow from "./StudentRow"
 
-const StudentTable = ({currentStudents, setStudentDemeritAbsence})=>{
+const StudentTable = ({currentStudents, setStudentDemeritAbsence, setSelectedStudent})=>{
     
         const studentList = 
             currentStudents.map(student=>{
                 return(
                     <StudentRow key={student.id} 
                     student={student} 
-                    setStudentDemeritAbsence={setStudentDemeritAbsence}/>
+                    setStudentDemeritAbsence={setStudentDemeritAbsence}
+                    setSelectedStudent={setSelectedStudent}/>
                 )
             })
 
