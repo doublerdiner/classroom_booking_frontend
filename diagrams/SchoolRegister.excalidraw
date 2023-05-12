@@ -72,8 +72,8 @@
     },
     {
       "type": "text",
-      "version": 186,
-      "versionNonce": 243944806,
+      "version": 187,
+      "versionNonce": 2019819222,
       "isDeleted": false,
       "id": "OL5fU_uvYFdD99rfjUm8g",
       "fillStyle": "solid",
@@ -92,7 +92,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710778231,
+      "updated": 1683904293666,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -103,12 +103,12 @@
       "containerId": null,
       "originalText": "User",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 504,
-      "versionNonce": 806888442,
+      "version": 505,
+      "versionNonce": 788562314,
       "isDeleted": false,
       "id": "nWmXtqxHxIjx4OyYwyjVv",
       "fillStyle": "solid",
@@ -127,7 +127,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710778232,
+      "updated": 1683904293667,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -138,7 +138,7 @@
       "containerId": null,
       "originalText": "id: Long\nfirstName: String\nlastName: String\nemail: String\nlessons: List<Lesson>\n\n",
       "lineHeight": 1.2,
-      "baseline": 162
+      "baseline": 163
     },
     {
       "type": "rectangle",
@@ -209,8 +209,8 @@
     },
     {
       "type": "text",
-      "version": 451,
-      "versionNonce": 401060006,
+      "version": 452,
+      "versionNonce": 543798294,
       "isDeleted": false,
       "id": "gkNQPrYf4B_XsHzOlZ55K",
       "fillStyle": "solid",
@@ -229,7 +229,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710778232,
+      "updated": 1683904293667,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -240,12 +240,12 @@
       "containerId": null,
       "originalText": "Lesson",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 607,
-      "versionNonce": 2462906,
+      "version": 608,
+      "versionNonce": 994820170,
       "isDeleted": false,
       "id": "HsXzGcSN9RGcEjgata_00",
       "fillStyle": "solid",
@@ -264,7 +264,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710778232,
+      "updated": 1683904293667,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -275,7 +275,7 @@
       "containerId": null,
       "originalText": "id: Long\nname: String\nday: Enum\nperiod: int\nyearGroup: Enum\nuser: User\nbookings: List<Booking>",
       "lineHeight": 1.2,
-      "baseline": 162
+      "baseline": 163
     },
     {
       "type": "rectangle",
@@ -346,8 +346,8 @@
     },
     {
       "type": "text",
-      "version": 679,
-      "versionNonce": 775334886,
+      "version": 680,
+      "versionNonce": 1082573142,
       "isDeleted": false,
       "id": "A0yCgtTC-4FNRsynkB9wE",
       "fillStyle": "solid",
@@ -366,7 +366,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710778233,
+      "updated": 1683904293667,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -377,12 +377,12 @@
       "containerId": null,
       "originalText": "Student",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 1035,
-      "versionNonce": 1992748410,
+      "version": 1036,
+      "versionNonce": 21047050,
       "isDeleted": false,
       "id": "5eVo7XkAA9rTvGJ2sLGo5",
       "fillStyle": "solid",
@@ -401,7 +401,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710778233,
+      "updated": 1683904293668,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -412,7 +412,7 @@
       "containerId": null,
       "originalText": "id: Long\nfirstName: String\nlastName: String\nstudentYear: int\nbookings: List<Booking>\ndemerits: List<Demerit>\nabsences: List<Absence>\ndemeritFlag: boolean\nabsenceFlag: boolean\nnotes: String",
       "lineHeight": 1.2,
-      "baseline": 234
+      "baseline": 235
     },
     {
       "type": "rectangle",
@@ -483,8 +483,8 @@
     },
     {
       "type": "text",
-      "version": 1332,
-      "versionNonce": 1870937894,
+      "version": 1333,
+      "versionNonce": 202385046,
       "isDeleted": false,
       "id": "M61LC9lB1bGoJSjGpKbkg",
       "fillStyle": "solid",
@@ -503,7 +503,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710778233,
+      "updated": 1683904293668,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -514,7 +514,7 @@
       "containerId": null,
       "originalText": "id: Long\ntype: Enum\ndate: Date\nstudent: Student\nnotes: String",
       "lineHeight": 1.2,
-      "baseline": 114
+      "baseline": 115
     },
     {
       "type": "line",
@@ -764,8 +764,8 @@
     },
     {
       "type": "text",
-      "version": 298,
-      "versionNonce": 1765748282,
+      "version": 299,
+      "versionNonce": 425440714,
       "isDeleted": false,
       "id": "Tp_Jgx3t88KCr9wlsZvJ-",
       "fillStyle": "solid",
@@ -784,7 +784,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710778233,
+      "updated": 1683904293668,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -795,12 +795,12 @@
       "containerId": null,
       "originalText": "Demerit",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "text",
-      "version": 303,
-      "versionNonce": 809331302,
+      "version": 304,
+      "versionNonce": 62579670,
       "isDeleted": false,
       "id": "1XrBy_CxattY5IE8TJLMX",
       "fillStyle": "solid",
@@ -819,7 +819,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710778233,
+      "updated": 1683904293668,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -830,7 +830,7 @@
       "containerId": null,
       "originalText": "demeritCheck(Student): Student",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "line",
@@ -1067,8 +1067,8 @@
     },
     {
       "type": "text",
-      "version": 1383,
-      "versionNonce": 208754426,
+      "version": 1384,
+      "versionNonce": 1421241482,
       "isDeleted": false,
       "id": "o49-PRubSe0LfuY0XuEzS",
       "fillStyle": "solid",
@@ -1087,7 +1087,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710778233,
+      "updated": 1683904293668,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1098,7 +1098,7 @@
       "containerId": null,
       "originalText": "id: Long\ntype: Enum\ndate: Date\nstudent: Student\nnotes: String",
       "lineHeight": 1.2,
-      "baseline": 114
+      "baseline": 115
     },
     {
       "type": "line",
@@ -1143,8 +1143,8 @@
     },
     {
       "type": "text",
-      "version": 356,
-      "versionNonce": 791621030,
+      "version": 357,
+      "versionNonce": 1234958614,
       "isDeleted": false,
       "id": "dSLJc_lV7cKnjT0aha7xD",
       "fillStyle": "solid",
@@ -1163,7 +1163,7 @@
       "groupIds": [],
       "roundness": null,
       "boundElements": [],
-      "updated": 1683710778234,
+      "updated": 1683904293668,
       "link": null,
       "locked": false,
       "fontSize": 20,
@@ -1174,7 +1174,7 @@
       "containerId": null,
       "originalText": "Absence",
       "lineHeight": 1.2,
-      "baseline": 18
+      "baseline": 19
     },
     {
       "type": "line",
