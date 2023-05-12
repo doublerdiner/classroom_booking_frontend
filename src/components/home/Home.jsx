@@ -62,20 +62,11 @@ const Home = ()=>{
     const addAbsence = (data)=>{
         console.log(data)
         const tempStudent = data.student
-        const practice = {
-            absence: "Late",
-            date: "2023-05-12",
-            student: {
-                id: 1
-            }}
         postRoute("absences", data).then(absence=>{
             tempStudent.absences.push(absence)
             setSelectedStudent(tempStudent)
         })
     }
-    // This is not working
-
-    console.log(currentUser)
 
     return(
         
