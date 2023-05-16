@@ -12,6 +12,7 @@ const StudentRow = ({student, setStudentDemeritAbsence, setSelectedStudent={setS
     }
 
     const demeritClick = ()=>{
+        // document.getElementById("demeritForm").reset()
         setStudentDemeritAbsence({
             type: "Demerit",
             student: student})

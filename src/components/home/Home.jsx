@@ -109,7 +109,7 @@ const Home = ()=>{
                             <Route index element={<Pupils/>}></Route>
                         </Route>
                         <Route path="/lessons">
-                            <Route index element={<Lessons/>}></Route>
+                            <Route index element={<Lessons lessons={currentUser.lessons}/>}></Route>
                         </Route>
                         <Route path="/settings" element={<Settings/>}/>
                     </Routes>

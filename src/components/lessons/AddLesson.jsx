@@ -4,7 +4,7 @@ const AddLesson = ()=>{
     return(
         <>
         <Paper>
-            <Typography>Add Lesson</Typography>
+            <Typography className="center" variant="h5" sx={{textDecoration:"underline"}}> Add Lesson</Typography>
         </Paper>
         </>
     )
