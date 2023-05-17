@@ -1,7 +1,8 @@
 import { TableCell, TableRow } from "@mui/material"
 import VisibilityIcon from '@mui/icons-material/Visibility';
+import DeleteIcon from '@mui/icons-material/Delete';
 
-const LessonRow = ({lesson})=>{
+const LessonRow = ({lesson, deleteLesson})=>{
 
     const classSize = lesson.students.length
     
@@ -14,6 +15,7 @@ const LessonRow = ({lesson})=>{
                 <TableCell>{lesson.yearGroup}</TableCell>
                 <TableCell>{classSize}</TableCell>
                 <TableCell><VisibilityIcon/></TableCell>
+                <TableCell><DeleteIcon onClick={()=>{deleteLesson(lesson)}}/></TableCell>
             </TableRow>
         </>
     )

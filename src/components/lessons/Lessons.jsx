@@ -3,16 +3,18 @@ import Grid2 from "@mui/material/Unstable_Grid2/Grid2"
 import AddLesson from "./AddLesson"
 import AllLessons from "./AllLessons"
 
-const Lessons = ({lessons})=>{
-    console.log(lessons)
+const Lessons = ({lessons, date, addLesson, deleteLesson})=>{
+
     return(
         <>
         <Grid2 container spacing={2}>
             <Grid2 xs={3}>
-                <AddLesson/>
+                <AddLesson date={date} addLesson={addLesson}/>
             </Grid2>
             <Grid2 xs={9}>
-                <AllLessons lessons={lessons}/>
+                <AllLessons 
+                lessons={lessons}
+                deleteLesson={deleteLesson}/>
             </Grid2>
         </Grid2>
         </>

@@ -1,12 +1,13 @@
 import { Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material"
 import LessonRow from "./LessonRow"
 
-const AllLessons = ({lessons})=>{
+const AllLessons = ({lessons, deleteLesson})=>{
 
     const lessonList = lessons.map((lesson)=>{
         return(
                 <LessonRow key={lesson.id}
-                lesson={lesson}/>
+                lesson={lesson}
+                deleteLesson={deleteLesson}/>
         )
     })
 
@@ -22,6 +23,7 @@ const AllLessons = ({lessons})=>{
                         <TableCell>Year Group</TableCell>
                         <TableCell>Class Size</TableCell>
                         <TableCell>View</TableCell>
+                        <TableCell>Delete</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>

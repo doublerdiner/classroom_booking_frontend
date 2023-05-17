@@ -53,7 +53,7 @@ const StudentDemeritAbsence = ({studentDemeritAbsence, setStudentDemeritAbsence,
                 <Typography className="center" variant="h6">{studentDemeritAbsence.student.firstName} {studentDemeritAbsence.student.lastName}</Typography>
                 {studentDemeritAbsence.type == "Demerit" ? 
                 <div className="center">
-                    <form id="demeritForm" onSubmit={demeritSubmit} className="center column width25rem gap1rem topPadding1rem bottomPadding3rem" id="demeritForm">
+                    <form onSubmit={demeritSubmit} className="center column width25rem gap1rem topPadding1rem bottomPadding3rem" id="demeritForm">
                             <Input id="date" type="date" defaultValue={datePlaceholder()}></Input>
                             <Select
                                 labelId="demeritSelect-label"

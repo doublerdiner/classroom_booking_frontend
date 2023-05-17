@@ -5,7 +5,7 @@ import Menu from "../menu/Menu"
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2"
 import Homepage from "./Homepage"
 import { useEffect, useState } from "react"
-import { getIndex } from "../service/Service"
+import { deleteRoute, getIndex } from "../service/Service"
 import { findThisUser} from "../service/Helpers"
 import { getDate } from "../service/Helpers"
 import { postRoute } from "../service/Service"
@@ -22,6 +22,7 @@ const Home = ()=>{
     const [currentStudents, setCurrentStudents] = useState([])
     const [selectedStudent, setSelectedStudent] = useState(null)
     const [allStudents, setAllStudents] = useState([])
+    const [lessons, setLessons] = useState([])
 
     useEffect(()=>{
         getIndex('users').then(data=>{
@@ -34,7 +35,7 @@ const Home = ()=>{
         getIndex('students').then(data =>{
             setAllStudents(data)
         })
-    },[user, selectedStudent])
+    },[user, selectedStudent, lessons])
 
     useEffect(()=>{
         if(currentUser && date && currentPeriod) {
@@ -75,6 +76,30 @@ const Home = ()=>{
         })
     }
 
+    const addLesson = (data)=>{
+        const newLessons = currentUser.lessons
+        data.user = currentUser
+        postRoute("lessons", data).then(lesson=>{
+            newLessons.push(lesson)
+            setLessons(newLessons)
+        })
+    }
+
+    const deleteItem = (item, collection)=>{
+        const id = collection.indexOf(item)
+        collection.splice(id, 1)
+        return collection
+      }
+
+    const deleteLesson = (data)=>{
+        const temp = currentUser.lessons
+        const collection = deleteItem(data, temp)
+        deleteRoute('lessons/', data.id)
+        .then(setLessons(collection))
+    }
+
+    console.log(currentUser)
+
     return(
         
         <>
@@ -109,7 +134,13 @@ const Home = ()=>{
                             <Route index element={<Pupils/>}></Route>
                         </Route>
                         <Route path="/lessons">
-                            <Route index element={<Lessons lessons={currentUser.lessons}/>}></Route>
+                            <Route index element={
+                                <Lessons 
+                                lessons={currentUser.lessons} 
+                                date={date}
+                                addLesson={addLesson}
+                                deleteLesson={deleteLesson}/>}>
+                            </Route>
                         </Route>
                         <Route path="/settings" element={<Settings/>}/>
                     </Routes>
