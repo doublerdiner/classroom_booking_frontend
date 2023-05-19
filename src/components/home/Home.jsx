@@ -12,6 +12,8 @@ import { postRoute } from "../service/Service"
 import Pupils from "../pupils/Pupils"
 import Lessons from "../lessons/Lessons"
 import Settings from "../settings/Settings"
+import LessonView from "../lessons/LessonView"
+import PupilView from "../pupils/PupilView"
 
 const Home = ()=>{
     const {isAuthenticated, user} = useAuth0()
@@ -23,6 +25,7 @@ const Home = ()=>{
     const [selectedStudent, setSelectedStudent] = useState(null)
     const [allStudents, setAllStudents] = useState([])
     const [lessons, setLessons] = useState([])
+    const [selectedLesson, setSelectedLesson] = useState(null);
 
     useEffect(()=>{
         getIndex('users').then(data=>{
@@ -98,8 +101,6 @@ const Home = ()=>{
         .then(setLessons(collection))
     }
 
-    console.log(currentUser)
-
     return(
         
         <>
@@ -132,6 +133,9 @@ const Home = ()=>{
                         </Route>
                         <Route path="/pupils">
                             <Route index element={<Pupils/>}></Route>
+                            <Route path=":id" element={
+                                <PupilView selectedStudent={selectedStudent}/>
+                            }/>
                         </Route>
                         <Route path="/lessons">
                             <Route index element={
@@ -139,8 +143,12 @@ const Home = ()=>{
                                 lessons={currentUser.lessons} 
                                 date={date}
                                 addLesson={addLesson}
-                                deleteLesson={deleteLesson}/>}>
+                                deleteLesson={deleteLesson}
+                                setSelectedLesson={setSelectedLesson}/>}>
                             </Route>
+                            <Route path=":id" element={
+                                <LessonView selectedLesson={selectedLesson}/>
+                            }/>
                         </Route>
                         <Route path="/settings" element={<Settings/>}/>
                     </Routes>

@@ -3,7 +3,7 @@ import Grid2 from "@mui/material/Unstable_Grid2/Grid2"
 import AddLesson from "./AddLesson"
 import AllLessons from "./AllLessons"
 
-const Lessons = ({lessons, date, addLesson, deleteLesson})=>{
+const Lessons = ({lessons, date, addLesson, deleteLesson, setSelectedLesson})=>{
 
     return(
         <>
@@ -14,7 +14,8 @@ const Lessons = ({lessons, date, addLesson, deleteLesson})=>{
             <Grid2 xs={9}>
                 <AllLessons 
                 lessons={lessons}
-                deleteLesson={deleteLesson}/>
+                deleteLesson={deleteLesson}
+                setSelectedLesson={setSelectedLesson}/>
             </Grid2>
         </Grid2>
         </>
