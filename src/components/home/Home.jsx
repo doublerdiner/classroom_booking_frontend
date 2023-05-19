@@ -10,9 +10,9 @@ import { findThisUser} from "../service/Helpers"
 import { getDate } from "../service/Helpers"
 import { postRoute } from "../service/Service"
 import Pupils from "../pupils/Pupils"
-import Lessons from "../lessons/Lessons"
+import Lessons from "../lessons/allLessons/Lessons"
 import Settings from "../settings/Settings"
-import LessonView from "../lessons/LessonView"
+import LessonView from "../lessons/lessonView/LessonView"
 import PupilView from "../pupils/PupilView"
 
 const Home = ()=>{
@@ -147,7 +147,9 @@ const Home = ()=>{
                                 setSelectedLesson={setSelectedLesson}/>}>
                             </Route>
                             <Route path=":id" element={
-                                <LessonView selectedLesson={selectedLesson}/>
+                                <LessonView 
+                                selectedLesson={selectedLesson}
+                                setSelectedStudent={setSelectedStudent}/>
                             }/>
                         </Route>
                         <Route path="/settings" element={<Settings/>}/>
