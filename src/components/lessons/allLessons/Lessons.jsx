@@ -7,7 +7,7 @@ const Lessons = ({lessons, date, addLesson, deleteLesson, setSelectedLesson})=>{
 
     return(
         <>
-        <Grid2 container spacing={2}>
+        <Grid2 container spacing={2} className="padding2rem">
             <Grid2 xs={3}>
                 <AddLesson date={date} addLesson={addLesson}/>
             </Grid2>

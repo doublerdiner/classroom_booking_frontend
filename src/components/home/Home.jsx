@@ -5,8 +5,8 @@ import Menu from "../menu/Menu"
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2"
 import Homepage from "./Homepage"
 import { useEffect, useState } from "react"
-import { deleteRoute, getIndex } from "../service/Service"
-import { findThisUser} from "../service/Helpers"
+import { deleteRoute, getIndex, putRoute } from "../service/Service"
+import { findById, findThisUser} from "../service/Helpers"
 import { getDate } from "../service/Helpers"
 import { postRoute } from "../service/Service"
 import Pupils from "../pupils/Pupils"
@@ -100,6 +100,22 @@ const Home = ()=>{
         deleteRoute('lessons/', data.id)
         .then(setLessons(collection))
     }
+    const removeStudent = (student, lesson)=>{
+        const id = lesson.students.indexOf(student)
+        lesson.students.splice(id, 1)
+        updateLesson(lesson)
+    }
+
+    const updateLesson = (lesson)=>{
+        const temp = currentUser.lessons
+        const tempLesson = findById(temp, lesson.id)
+        const index = temp.indexOf(tempLesson)
+        temp[index] = lesson
+        lesson.user = {}
+        lesson.user.id = currentUser.id
+        putRoute('lessons/', lesson.id, lesson)
+        .then(setLessons(temp))
+    }
 
     return(
         
@@ -149,7 +165,9 @@ const Home = ()=>{
                             <Route path=":id" element={
                                 <LessonView 
                                 selectedLesson={selectedLesson}
-                                setSelectedStudent={setSelectedStudent}/>
+                                setSelectedStudent={setSelectedStudent}
+                                removeStudent={removeStudent}
+                                />
                             }/>
                         </Route>
                         <Route path="/settings" element={<Settings/>}/>

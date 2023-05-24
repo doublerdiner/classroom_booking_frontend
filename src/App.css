@@ -49,6 +49,12 @@ body{
 .width25rem{
   width: 25rem;
 }
+.width100{
+  width: 100%;
+}
+.padding2rem{
+  padding: 2rem;
+}
 .gap1rem{
   gap: 1rem;
 }

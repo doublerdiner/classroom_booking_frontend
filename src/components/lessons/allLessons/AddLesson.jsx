@@ -25,7 +25,7 @@ const AddLesson = ({date, addLesson})=>{
         <Paper>
             <Typography className="center" variant="h5" sx={{textDecoration:"underline"}}> Add Lesson</Typography>
             <div className="center">
-                <form onSubmit={submitLesson} className="center column width25rem gap1rem topPadding1rem bottomPadding3rem">
+                <form onSubmit={submitLesson} className="center column gap1rem topPadding1rem bottomPadding3rem">
                     <TextField onChange={formChange} id="description" type="text" label="Description" required></TextField>
                     <div>
                         <InputLabel htmlFor="daySelect">Day: </InputLabel>
@@ -33,7 +33,7 @@ const AddLesson = ({date, addLesson})=>{
                             labelId="daySelect-label"
                             id="daySelect"
                             defaultValue={date.dayName}
-                            className="width25rem"
+                            className="width100"
                             inputProps={{ 'aria-label': 'Without label' }}>
                             <MenuItem value={"Monday"}>Monday</MenuItem>
                             <MenuItem value={"Tuesday"}>Tuesday</MenuItem>
@@ -48,7 +48,7 @@ const AddLesson = ({date, addLesson})=>{
                             labelId="periodSelect-label"
                             id="period"
                             defaultValue={1}
-                            className="width25rem"
+                            className="width100"
                             inputProps={{ 'aria-label': 'Without label' }}>
                             <MenuItem value={1}>1</MenuItem>
                             <MenuItem value={2}>2</MenuItem>
@@ -61,7 +61,7 @@ const AddLesson = ({date, addLesson})=>{
                             labelId="yearGroup-select"
                             id="yearGroup"
                             defaultValue={1}
-                            className="width25rem"
+                            className="width100"
                             inputProps={{ 'aria-label': 'Without label' }}>
                             <MenuItem value={1}>1</MenuItem>
                             <MenuItem value={2}>2</MenuItem>

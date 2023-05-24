@@ -12,7 +12,7 @@ const Homepage = ({user, date, currentPeriod, currentLesson, currentStudents, se
 
     return(
         <>
-        <Grid2 container spacing={2}>
+        <Grid2 container spacing={4} className="padding2rem">
             <Grid2 xs={3}>
                 <LessonDescription currentLesson={currentLesson}/>
             </Grid2>

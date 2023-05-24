@@ -23,3 +23,8 @@ export const formatDate = (date)=>{
   const day = ("0" + date.day).slice(-2)
   return `${date.year}-${month}-${day}`
 }
+
+export const findById = (array, id)=>{
+  const answer = array.find((item) => item.id === id)
+  return answer
+}
