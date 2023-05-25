@@ -39,12 +39,12 @@ const DateAndPeriod = ({date, currentPeriod, setCurrentPeriod, updateDate, setSt
                 <ArrowBackIcon onClick={backOneDay}/>
             </Button>
             <div>
-                <Button>
-                    <Typography onClick={today}>Today</Typography>
+                <Button onClick={today}>
+                    <Typography>Today</Typography>
                 </Button>
             </div>
-            <Button>
-                <ArrowForwardIcon onClick={forwardOneDay}/>
+            <Button onClick={forwardOneDay}>
+                <ArrowForwardIcon/>
             </Button>
         </section>
         <div className="center">

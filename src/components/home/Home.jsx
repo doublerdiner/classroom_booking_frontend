@@ -108,13 +108,13 @@ const Home = ()=>{
 
     const updateLesson = (lesson)=>{
         const temp = currentUser.lessons
-        const tempLesson = findById(temp, lesson.id)
-        const index = temp.indexOf(tempLesson)
-        temp[index] = lesson
-        lesson.user = {}
-        lesson.user.id = currentUser.id
+        const updatedLessons = [...temp]
+        const tempLesson = findById(updatedLessons, lesson.id)
+        const index = updatedLessons.indexOf(tempLesson)
+        lesson.user = {id: currentUser.id}
+        updatedLessons[index] = lesson
         putRoute('lessons/', lesson.id, lesson)
-        .then(setLessons(temp))
+        .then((res)=>setLessons(res))
     }
 
     return(
