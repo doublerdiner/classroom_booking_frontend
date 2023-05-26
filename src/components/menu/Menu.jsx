@@ -6,7 +6,7 @@ import GroupIcon from '@mui/icons-material/Group';
 import SchoolIcon from '@mui/icons-material/School';
 import { Link } from "react-router-dom";
 
-const Menu = ({user})=>{
+const Menu = ({user, setSelectedStudent})=>{
     
     return(
         <>
@@ -14,7 +14,7 @@ const Menu = ({user})=>{
                  <AppBar position="static">
                     <Toolbar variant="dense">
                             <div className="menuIcon">
-                                    <Link to="">
+                                    <Link onClick={()=>setSelectedStudent(null)} to="">
                                     <MenuItem>
                                         <HomeIcon></HomeIcon>
                                         <Typography sx={{paddingLeft:".5rem"}}>Home</Typography>
@@ -22,7 +22,7 @@ const Menu = ({user})=>{
                                     </Link>
                             </div>
                             <div className="menuIcon">
-                                <Link to="lessons">
+                                <Link onClick={()=>setSelectedStudent(null)} to="lessons">
                                 <MenuItem>
                                     <SchoolIcon></SchoolIcon>
                                     <Typography sx={{paddingLeft:".5rem"}}>Your Lessons</Typography>
@@ -38,7 +38,7 @@ const Menu = ({user})=>{
                                 </Link>
                             </div>
                             <div>
-                                <Typography variant="h2">School Register</Typography>
+                                <Typography className="center" variant="h2">School Register</Typography>
                             </div>
                             <div className="spaceRight">
                                 <div>

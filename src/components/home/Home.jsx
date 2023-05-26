@@ -63,6 +63,11 @@ const Home = ()=>{
         setDate(newDate)
     }
 
+    const findStudent = (student) =>{
+        const answer = allStudents.find((indi)=> indi.id === student.id)
+        setSelectedStudent(answer)
+    }
+
     const addDemerit = (data)=>{
         const tempStudent = data.student
         postRoute("demerits", data).then(demerit=>{
@@ -100,6 +105,15 @@ const Home = ()=>{
         deleteRoute('lessons/', data.id)
         .then(setLessons(collection))
     }
+
+    const deleteAbsence = (absence)=>{
+        const temp = {...selectedStudent}
+        temp.absences = deleteItem(absence, temp.absences)
+        deleteRoute('absences/', absence.id)
+        .then(setSelectedStudent(temp))
+
+    }
+
     const removeStudent = (student, lesson)=>{
         const id = lesson.students.indexOf(student)
         lesson.students.splice(id, 1)
@@ -117,6 +131,13 @@ const Home = ()=>{
         .then((res)=>setLessons(res))
     }
 
+    const updateStudent = (student)=>{
+        const uneditedStudent = findById(allStudents, student.id)
+        student.lessons = uneditedStudent.lessons
+        putRoute('students/', student.id, student)
+        .then(()=>setSelectedStudent(student))
+    }
+
     return(
         
         <>
@@ -126,7 +147,7 @@ const Home = ()=>{
             <div className="bg"></div>
             <Grid2 container>
                 <Grid2 xs={12}>
-                    <Menu user={currentUser}/>
+                    <Menu user={currentUser} setSelectedStudent={setSelectedStudent}/>
                 </Grid2>
                 <Grid2 xs={.5}></Grid2>
                 <Grid2 xs={11}>
@@ -150,7 +171,7 @@ const Home = ()=>{
                         <Route path="/pupils">
                             <Route index element={<Pupils/>}></Route>
                             <Route path=":id" element={
-                                <PupilView selectedStudent={selectedStudent}/>
+                                <PupilView selectedStudent={selectedStudent} updateStudent={updateStudent} deleteAbsence={deleteAbsence}/>
                             }/>
                         </Route>
                         <Route path="/lessons">

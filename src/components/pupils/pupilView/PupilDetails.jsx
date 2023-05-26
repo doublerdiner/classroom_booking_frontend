@@ -2,7 +2,6 @@ import { Button, Card, CardContent, Typography } from "@mui/material"
 import { useState } from "react"
 
 const PupilDetails = ({student, pupilEditForm, setPupilEditForm})=>{
-    console.log(student)
 
     return(
         <>
