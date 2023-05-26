@@ -1,9 +1,8 @@
 import { Button, Card, CardContent, Typography } from "@mui/material"
 import { useState } from "react"
 
-const PupilDetails = ({student})=>{
-    const [editWindow, setEditWindow] = useState(false)
-    console.log(editWindow)
+const PupilDetails = ({student, pupilEditForm, setPupilEditForm})=>{
+    console.log(student)
 
     return(
         <>
@@ -23,7 +22,7 @@ const PupilDetails = ({student})=>{
                     }
                 </div>
                 <div className="center">
-                    <Button onClick={()=>{setEditWindow(true)}} variant="contained">Edit</Button>
+                    <Button onClick={()=>{setPupilEditForm(!pupilEditForm)}} variant="contained">Edit</Button>
                 </div>
             </CardContent>
         </Card>

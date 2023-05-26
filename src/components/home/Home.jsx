@@ -13,7 +13,7 @@ import Pupils from "../pupils/Pupils"
 import Lessons from "../lessons/allLessons/Lessons"
 import Settings from "../settings/Settings"
 import LessonView from "../lessons/lessonView/LessonView"
-import PupilView from "../pupils/PupilView"
+import PupilView from "../pupils/pupilview/PupilView"
 
 const Home = ()=>{
     const {isAuthenticated, user} = useAuth0()
