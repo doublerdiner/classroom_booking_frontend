@@ -7,9 +7,8 @@ import EditPupil from "./EditPupil"
 import { useState } from "react"
 import LessonInfo from "./LessonInfo"
 
-const PupilView = ({selectedStudent, updateStudent, deleteAbsence, setSelectedLesson})=>{
+const PupilView = ({selectedStudent, updateStudent, deleteAbsence, findLesson})=>{
     const [pupilEditForm, setPupilEditForm] = useState(false);
-    console.log(selectedStudent)
     return(
         <>
         {selectedStudent ? 
@@ -25,7 +24,7 @@ const PupilView = ({selectedStudent, updateStudent, deleteAbsence, setSelectedLe
             <Grid2 xs={9}>
                 <AbsenceInfo absences={selectedStudent.absences} deleteAbsence={deleteAbsence}/>
                 <DemeritInfo demerits={selectedStudent.demerits}/>            
-                <LessonInfo student={selectedStudent}/>    
+                <LessonInfo student={selectedStudent} findLesson={findLesson}/>    
             </Grid2>
             </Grid2>
             :

@@ -3,7 +3,7 @@ import Grid2 from "@mui/material/Unstable_Grid2/Grid2"
 import LessonDescription from "../../home/LessonDescription";
 import LessonStudentTable from "./LessonStudentTable";
 
-const LessonView = ({selectedLesson, findStudent, removeStudent={removeStudent}})=>{
+const LessonView = ({selectedLesson, findStudent, removeStudent})=>{
     return(
         <>
             <Grid2 container spacing={2} className="padding2rem">

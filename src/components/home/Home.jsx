@@ -70,6 +70,13 @@ const Home = ()=>{
         })
     }
 
+    const findLesson = (lesson)=>{
+        getOne('lessons/', lesson.id)
+        .then((res)=>{
+            setSelectedLesson(res)
+        })
+    }
+
     const addDemerit = (data)=>{
         const tempStudent = data.student
         postRoute("demerits", data).then(demerit=>{
@@ -177,7 +184,10 @@ const Home = ()=>{
                                 <PupilView 
                                 selectedStudent={selectedStudent} 
                                 updateStudent={updateStudent} 
-                                deleteAbsence={deleteAbsence}/>
+                                deleteAbsence={deleteAbsence}
+                                findStudent={findStudent}
+                                findLesson={findLesson}
+                                />
                             }/>
                         </Route>
                         <Route path="/lessons">

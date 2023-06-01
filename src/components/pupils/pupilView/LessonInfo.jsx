@@ -1,9 +1,9 @@
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material"
-import DeleteIcon from '@mui/icons-material/Delete';
+import PersonRemoveIcon from '@mui/icons-material/PersonRemove';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import { Link } from "react-router-dom";
 
-const LessonInfo = ({student})=>{
+const LessonInfo = ({student, findLesson, removeStudent})=>{
 
     const lessonList = student.lessons.map(lesson=>{
         return(
@@ -11,8 +11,7 @@ const LessonInfo = ({student})=>{
                  <TableCell>{lesson.name}</TableCell>
                  <TableCell>{lesson.dayType}</TableCell>
                  <TableCell>{lesson.period}</TableCell>
-                 <TableCell><Link onClick={()=>{}}><VisibilityIcon/></Link></TableCell>
-                 <TableCell><DeleteIcon/></TableCell>
+                 <TableCell><Link onClick={()=>{findLesson(lesson)}} to={`/home/lessons/${lesson.id}`}><VisibilityIcon/></Link></TableCell>
              </TableRow>
         )
     })
@@ -28,7 +27,6 @@ const LessonInfo = ({student})=>{
                             <TableCell>Day</TableCell>
                             <TableCell>Period</TableCell>
                             <TableCell>View</TableCell>
-                            <TableCell>Remove {student.firstName} from Lesson</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
