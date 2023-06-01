@@ -74,7 +74,7 @@ const Home = ()=>{
         const tempStudent = data.student
         postRoute("demerits", data).then(demerit=>{
             tempStudent.demerits.push(demerit)
-            setSelectedStudent(tempStudent)
+            findStudent(tempStudent)
         })
     }
 
@@ -82,7 +82,7 @@ const Home = ()=>{
         const tempStudent = data.student
         postRoute("absences", data).then(absence=>{
             tempStudent.absences.push(absence)
-            setSelectedStudent(tempStudent)
+            findStudent(tempStudent)
         })
     }
 
@@ -112,7 +112,7 @@ const Home = ()=>{
         const temp = {...selectedStudent}
         temp.absences = deleteItem(absence, temp.absences)
         deleteRoute('absences/', absence.id)
-        .then(setSelectedStudent(temp))
+        .then(findStudent(temp))
 
     }
 
@@ -137,7 +137,7 @@ const Home = ()=>{
         const uneditedStudent = findById(allStudents, student.id)
         student.lessons = uneditedStudent.lessons
         putRoute('students/', student.id, student)
-        .then(()=>setSelectedStudent(student))
+        .then(()=>findStudent(student))
     }
 
     return(
