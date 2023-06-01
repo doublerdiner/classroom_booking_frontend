@@ -80,6 +80,9 @@ body{
 .topPadding3vh{
   padding-top: 3vh;
 }
+.bottomMargin3rem{
+  margin-bottom: 3rem;
+}
 
 @keyframes slide {
   0% {

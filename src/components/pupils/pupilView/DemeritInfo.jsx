@@ -14,7 +14,8 @@ const DemeritInfo = ({demerits})=>{
     })
     return(
         <>
-            <TableContainer>
+        <Typography variant="h5">Demerits</Typography>
+            <TableContainer className="bottomMargin3rem">
                 <Table>
                     <TableHead>
                         <TableRow>

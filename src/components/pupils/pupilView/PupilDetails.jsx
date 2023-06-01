@@ -5,7 +5,7 @@ const PupilDetails = ({student, pupilEditForm, setPupilEditForm})=>{
 
     return(
         <>
-        <Card>
+        <Card className="bottomMargin3rem">
             <CardContent>
                 <Typography className="center" variant="h5" sx={{textDecoration:"underline"}}>{student.firstName} {student.lastName}</Typography>
                 <div className="center">

@@ -14,7 +14,8 @@ const AbsenceInfo = ({absences, deleteAbsence})=>{
     })
     return(
         <>
-            <TableContainer>
+        <Typography variant="h5">Absences</Typography>
+            <TableContainer className="bottomMargin3rem">
                 <Table>
                     <TableHead>
                         <TableRow>
