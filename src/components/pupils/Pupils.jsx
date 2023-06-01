@@ -1,6 +1,7 @@
 import { Typography } from "@mui/material"
 
-const Pupils = ()=>{
+const Pupils = ({allStudents})=>{
+    
     return (
         <>
             <Typography>Hi</Typography>

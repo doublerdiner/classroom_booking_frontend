@@ -186,7 +186,10 @@ const Home = ()=>{
                             />}>
                         </Route>
                         <Route path="/pupils">
-                            <Route index element={<Pupils/>}></Route>
+                            <Route index element={
+                                <Pupils allStudents={allStudents}/>
+                                }>
+                            </Route>
                             <Route path=":id" element={
                                 <PupilView 
                                 selectedStudent={selectedStudent} 
