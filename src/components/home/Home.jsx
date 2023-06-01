@@ -5,7 +5,7 @@ import Menu from "../menu/Menu"
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2"
 import Homepage from "./Homepage"
 import { useEffect, useState } from "react"
-import { deleteRoute, getIndex, putRoute } from "../service/Service"
+import { deleteRoute, getIndex, getOne, putRoute } from "../service/Service"
 import { findById, findThisUser} from "../service/Helpers"
 import { getDate } from "../service/Helpers"
 import { postRoute } from "../service/Service"
@@ -64,8 +64,10 @@ const Home = ()=>{
     }
 
     const findStudent = (student) =>{
-        const answer = allStudents.find((indi)=> indi.id === student.id)
-        setSelectedStudent(answer)
+        getOne('students/', student.id)
+        .then((res)=>{
+            setSelectedStudent(res)
+        })
     }
 
     const addDemerit = (data)=>{
@@ -166,6 +168,7 @@ const Home = ()=>{
                             setSelectedStudent={setSelectedStudent}
                             addDemerit={addDemerit}
                             addAbsence={addAbsence}
+                            findStudent={findStudent}
                             />}>
                         </Route>
                         <Route path="/pupils">
@@ -186,7 +189,7 @@ const Home = ()=>{
                             <Route path=":id" element={
                                 <LessonView 
                                 selectedLesson={selectedLesson}
-                                setSelectedStudent={setSelectedStudent}
+                                findStudent={findStudent}
                                 removeStudent={removeStudent}
                                 />
                             }/>

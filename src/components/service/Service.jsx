@@ -5,6 +5,11 @@ export const getIndex = (route)=>{
     .then(res=>res.json())
 }
 
+export const getOne = (route, id)=>{
+    return fetch(baseURL + route + id)
+    .then(res=>res.json())
+}
+
 export const postRoute = (route, payload)=>{
     return fetch(baseURL + route, {
         method: 'POST',

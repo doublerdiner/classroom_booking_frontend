@@ -8,8 +8,10 @@ import { useState } from "react"
 
 const PupilView = ({selectedStudent, updateStudent, deleteAbsence})=>{
     const [pupilEditForm, setPupilEditForm] = useState(false);
+    console.log(selectedStudent)
     return(
         <>
+        {selectedStudent ? 
             <Grid2 container spacing={2} className="padding2rem">
             <Grid2 xs={3}>
                 <PupilDetails student={selectedStudent} pupilEditForm={pupilEditForm} setPupilEditForm={setPupilEditForm}/>
@@ -24,6 +26,9 @@ const PupilView = ({selectedStudent, updateStudent, deleteAbsence})=>{
                 <DemeritInfo demerits={selectedStudent.demerits}/>                
             </Grid2>
             </Grid2>
+            :
+            <></>
+            }
         </>
     )
 }

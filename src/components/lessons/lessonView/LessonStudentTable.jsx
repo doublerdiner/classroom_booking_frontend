@@ -3,7 +3,7 @@ import PersonRemoveIcon from '@mui/icons-material/PersonRemove';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import { Link } from "react-router-dom";
 
-const LessonStudentTable = ({pupils, setSelectedStudent, selectedLesson, removeStudent})=>{
+const LessonStudentTable = ({pupils, findStudent, selectedLesson, removeStudent})=>{
 
 
     const pupilRow = pupils.map(pupil=>{
@@ -11,7 +11,7 @@ const LessonStudentTable = ({pupils, setSelectedStudent, selectedLesson, removeS
             <TableRow key={pupil.id}>
                 <TableCell>{pupil.firstName} {pupil.lastName}</TableCell>
                 <TableCell>{pupil.studentYear}</TableCell>
-                <TableCell><Link onClick={()=>{setSelectedStudent(pupil)}} to={`/home/pupils/${pupil.id}`}><VisibilityIcon/></Link></TableCell>
+                <TableCell><Link onClick={()=>{findStudent(pupil)}} to={`/home/pupils/${pupil.id}`}><VisibilityIcon/></Link></TableCell>
                 <TableCell><PersonRemoveIcon onClick={()=>{removeStudent(pupil, selectedLesson)}}/></TableCell>
 
             </TableRow>

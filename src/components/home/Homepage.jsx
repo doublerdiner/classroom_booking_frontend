@@ -7,7 +7,7 @@ import DateAndPeriod from "./DateAndPeriod"
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2"
 import StudentDemeritAbsence from "./StudentDemeritAbsence"
 
-const Homepage = ({user, date, currentPeriod, currentLesson, currentStudents, setCurrentPeriod, updateDate, selectedStudent, setSelectedStudent, addDemerit, addAbsence})=>{
+const Homepage = ({user, date, currentPeriod, currentLesson, currentStudents, setCurrentPeriod, updateDate, selectedStudent, setSelectedStudent, addDemerit, addAbsence, findStudent})=>{
     const [studentDemeritAbsence, setStudentDemeritAbsence] = useState(null)
 
     return(
@@ -43,7 +43,7 @@ const Homepage = ({user, date, currentPeriod, currentLesson, currentStudents, se
                 <StudentTable 
                 currentStudents={currentStudents} 
                 setStudentDemeritAbsence={setStudentDemeritAbsence} 
-                setSelectedStudent={setSelectedStudent}/>
+                findStudent={findStudent}/>
                 :
                 <></>}
             </Grid2>

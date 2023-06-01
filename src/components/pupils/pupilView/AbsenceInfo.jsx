@@ -2,7 +2,6 @@ import { TableCell, TableContainer, TableRow, Table, TableHead, Typography, Tabl
 import DeleteIcon from '@mui/icons-material/Delete';
 
 const AbsenceInfo = ({absences, deleteAbsence})=>{
-    console.log(absences)
     const absenceList = absences.map(absence =>{
         return (
             <TableRow key={absence.id} >

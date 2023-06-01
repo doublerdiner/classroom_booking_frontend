@@ -3,20 +3,20 @@ import AddIcon from '@mui/icons-material/Add';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import { Link } from "react-router-dom";
 
-const StudentRow = ({student, setStudentDemeritAbsence, setSelectedStudent={setSelectedStudent}})=>{
+const StudentRow = ({student, setStudentDemeritAbsence, findStudent={findStudent}})=>{
 
     const absenceClick = ()=>{
         setStudentDemeritAbsence({
             type: "Absence",
             student: student})
-        setSelectedStudent(student)
+        findStudent(student)
     }
 
     const demeritClick = ()=>{
         setStudentDemeritAbsence({
             type: "Demerit",
             student: student})
-        setSelectedStudent(student)
+        findStudent(student)
     }
 
     return(
@@ -28,7 +28,7 @@ const StudentRow = ({student, setStudentDemeritAbsence, setSelectedStudent={setS
                 <TableCell onClick={demeritClick}><Button><AddIcon></AddIcon></Button></TableCell>
                 <TableCell>{student.absenceFlag ? "true" : "false"}</TableCell>
                 <TableCell onClick={absenceClick}><Button><AddIcon></AddIcon></Button></TableCell>
-                <TableCell><Link onClick={()=>{setSelectedStudent(student)}} to={`/home/pupils/${student.id}`}><VisibilityIcon/></Link></TableCell>
+                <TableCell><Link onClick={()=>{findStudent(student)}} to={`/home/pupils/${student.id}`}><VisibilityIcon/></Link></TableCell>
             </TableRow>
         </>
     )
