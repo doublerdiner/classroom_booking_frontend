@@ -3,7 +3,7 @@ import PersonRemoveIcon from '@mui/icons-material/PersonRemove';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import { Link } from "react-router-dom";
 
-const LessonInfo = ({student, findLesson, removeStudent})=>{
+const LessonInfo = ({student, findLesson, removeLessonFromStudent})=>{
 
     const lessonList = student.lessons.map(lesson=>{
         return(
@@ -12,6 +12,7 @@ const LessonInfo = ({student, findLesson, removeStudent})=>{
                  <TableCell>{lesson.dayType}</TableCell>
                  <TableCell>{lesson.period}</TableCell>
                  <TableCell><Link onClick={()=>{findLesson(lesson)}} to={`/home/lessons/${lesson.id}`}><VisibilityIcon/></Link></TableCell>
+                 <TableCell><PersonRemoveIcon onClick={()=>{removeLessonFromStudent(student, lesson)}}/></TableCell>
              </TableRow>
         )
     })
@@ -27,6 +28,7 @@ const LessonInfo = ({student, findLesson, removeStudent})=>{
                             <TableCell>Day</TableCell>
                             <TableCell>Period</TableCell>
                             <TableCell>View</TableCell>
+                            <TableCell>Remove {student.firstName} from Lesson</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>

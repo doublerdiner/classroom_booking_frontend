@@ -129,6 +129,13 @@ const Home = ()=>{
         updateLesson(lesson)
     }
 
+    const removeLessonFromStudent = (student, lesson)=>{
+        const id = student.lessons.indexOf(lesson)
+        student.lessons.splice(id,1)
+        putRoute('students/', student.id, student)
+        .then(()=>findStudent(student))
+    }
+
     const updateLesson = (lesson)=>{
         const temp = currentUser.lessons
         const updatedLessons = [...temp]
@@ -187,6 +194,7 @@ const Home = ()=>{
                                 deleteAbsence={deleteAbsence}
                                 findStudent={findStudent}
                                 findLesson={findLesson}
+                                removeLessonFromStudent={removeLessonFromStudent}
                                 />
                             }/>
                         </Route>
