@@ -120,7 +120,12 @@ const Home = ()=>{
         temp.absences = deleteItem(absence, temp.absences)
         deleteRoute('absences/', absence.id)
         .then(findStudent(temp))
+    }
 
+    const deleteStudent = (student)=>{
+        document.getElementById("selectPupil").value=null
+        deleteRoute('students/', student.id)
+        .then(setSelectedStudent(null))
     }
 
     const removeStudent = (student, lesson)=>{
@@ -187,7 +192,13 @@ const Home = ()=>{
                         </Route>
                         <Route path="/pupils">
                             <Route index element={
-                                <Pupils allStudents={allStudents}/>
+                                <Pupils 
+                                allStudents={allStudents}
+                                selectedStudent={selectedStudent}
+                                setSelectedStudent={setSelectedStudent}
+                                findStudent={findStudent}
+                                deleteStudent={deleteStudent}
+                                />
                                 }>
                             </Route>
                             <Route path=":id" element={
